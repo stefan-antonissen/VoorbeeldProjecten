@@ -1,0 +1,26 @@
+﻿<ContentDialog x:ConnectionId='1'
+    x:Class="WindowsReddit.ContentDialogPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsReddit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Change page"
+    PrimaryButtonText="Accept"
+    SecondaryButtonText="Cancel"
+                                                         
+                                                             >
+
+    <Grid>
+        <StackPanel Margin="15">
+            <CheckBox x:ConnectionId='2' x:Name="HotCheckBox" Content="Hot"                          />
+            <CheckBox x:ConnectionId='3' x:Name="NewCheckBox" Content="New"                          />
+            <CheckBox x:ConnectionId='4' x:Name="RisingCheckBox" Content="Rising"                             />
+            <CheckBox x:ConnectionId='5' x:Name="ControversialCheckBox" Content="Controversial"                                    />
+            <CheckBox x:ConnectionId='6' x:Name="TopCheckBox" Content="Top"                          />
+            <CheckBox x:ConnectionId='7' x:Name="GildedCheckBox" Content="Gilded"                             />
+        </StackPanel>
+    </Grid>
+</ContentDialog>
+
