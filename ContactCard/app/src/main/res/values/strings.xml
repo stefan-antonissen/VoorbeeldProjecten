@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContactCard</string>
+    <string name="updateButtonText">Update</string>
+    <string name="defaultName">Stefan Antonissen</string>
+</resources>

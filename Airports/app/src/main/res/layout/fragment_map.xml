@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:weightSum="16">
+
+
+        <RelativeLayout
+            android:id="@+id/icaoLayout"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="ICAO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/icaoView"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/icaoViewValue"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nameLayout"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="Airport Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/nameView"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/nameViewValue"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/longitudeLayout"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="Longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/longitudeView"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/longitudeViewValue"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/latitudeLayout"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="Latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/latitudeView"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/latitudeViewValue"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/elevationLayout"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="Elevation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/elevationView"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/elevationViewValue"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/countryLayout"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="Country ISO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/countryView"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/countryViewValue"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/municipalityLayout"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="Municipality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/municipalityView"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/municipalityViewValue"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ehamLayout"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:text="Distance to EHAM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/ehamView"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ehamViewValue"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/myMap"
+            android:layout_weight="8" />
+
+
+
+
+    </LinearLayout>
